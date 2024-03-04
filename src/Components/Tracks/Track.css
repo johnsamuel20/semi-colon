@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: 5rem;
+}
+.blog_post {
+  background: #ffffff3b;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+.container_copy {
+  padding-top: 2rem ;
+  padding-left: 1rem;
+}
+.cont-header {
+    display: flex;
+    justify-content: space-between;
+}
+.img_pod {
+  height: 110px;
+  width: 110px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  z-index: 10;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.logo-img {
+  height: 8.3rem;
+  width: 8.3rem;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container_copy h3 {
+  margin: 0 0 0.5rem 0;
+  color: #999;
+  font-size: 1.25rem;
+}
+
+.container_copy h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.container_copy p {
+  margin: 0 0 4.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: #333;
+}
+.btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.btn_primary {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #fff;
+  width: 200px;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+  margin-top: 1rem;
+}
+.btn_primary:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_primary:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.btn_primary:hover::before {
+  filter: blur(20px);
+}
+
+.btn_primary:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
+
+
+.container {
+ padding-right: 20px;
+}
+
+.faq-drawer {
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+    color: white;
+}
+
+.faq-drawer__content-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+  border-top: #000 1px solid;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+/* OPTIONAL HOVER STATE */
+.faq-drawer__title:hover { 
+  color: #e29be9ec  ;
+}
+
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 1000rem;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  .container_copy {
+  padding: 2rem ;
+}
+.blog_post {
+    width: 90%;
+}
+}

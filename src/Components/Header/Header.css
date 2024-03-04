@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Dancing+Script&family=Kaushan+Script&family=Nanum+Gothic+Coding:wght@700&family=Petit+Formal+Script&family=Pinyon+Script&family=Roboto:wght@500&family=Rouge+Script&family=Source+Code+Pro:ital,wght@1,900&display=swap');
+
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+        background: url(../../assets/image3.jpg) center no-repeat;
+		opacity:0.9;
+		
+}
+header .overlay-header{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #00000069 10%, #0000006b 100%);
+  
+	
+}
+
+h1 {
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 100px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+.sub-title {
+	background: rgba( 242, 142, 19, 1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+font-size: 2rem;
+width: 40%;
+margin: auto;
+font-family: 'Source Code Pro', monospace;
+letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .sub-title {
+    width: 100% ;
+	font-size: 25px;
+  }
+  h1 {
+	font-size: 60px;
+  }
+}
+@media only screen and (max-width: 366px) {
+  .sub-title {
+    width: 100% ;
+	font-size: 25px;
+  }
+  h1 {
+	font-size: 40px;
+  }
+
+}

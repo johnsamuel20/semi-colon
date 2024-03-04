@@ -1,0 +1,28 @@
+.error-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-title h2 {
+    color: red;
+    font-size: 30px;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.err-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+@media screen and (max-width:568px) {
+    .error-title h2 {
+    font-size: 18px;
+}
+}
